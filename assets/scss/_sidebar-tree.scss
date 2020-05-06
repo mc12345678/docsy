@@ -29,8 +29,19 @@
             margin: 0;
         }
 
+        li > ul {
+            padding: 0;
+            margin: 0;
+        }
+
         @include media-breakpoint-up(md) {
             & > ul {
+                padding-left: .5rem;
+            }
+        }
+
+        @include media-breakpoint-up(md) {
+            & > li > ul {
                 padding-left: .5rem;
             }
         }
